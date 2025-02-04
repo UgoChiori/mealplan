@@ -83,7 +83,7 @@ export type Meal = {
       day: "Wednesday",
       meals: [
         {
-          name: "Greek Yogurt & Nut",
+          name: "Greek Yogurt & Nuts",
           category: "breakfast",
           ingredients: ["greek yogurt", "blueberries", "Nuts"],
         },
