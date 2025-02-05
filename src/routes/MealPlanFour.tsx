@@ -41,6 +41,7 @@ const MealPlanFour:React.FC = () => {
 return (
     <div className="p-6 bg-teal-200 min-h-screen">
       <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Weekly Meal Planner</h1>
+      <p className="text-center mb-4 font-bold text-2xl">Week 4</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {week4MealPlan.map((dayPlan) => (
           <div
