@@ -37,7 +37,7 @@ const foodEmojis: { [key: string]: string } = {
     "Jollof/Fried/White Rice(with any sauce/stew)": "🍚🍛",
   };
 
-const MealPlanTwo:React.FC = () => {
+const MealPlanFour:React.FC = () => {
 return (
     <div className="p-6 bg-teal-200 min-h-screen">
       <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Weekly Meal Planner</h1>
@@ -62,7 +62,7 @@ return (
                           {foodEmojis[meal.name] || "🍽️"} {meal.name}
                         </strong>
                         <p className="text-sm text-gray-500 capitalize italic break-words">
-                          Ingredients: {meal.ingredients.join(", ")}
+                        <p className="font-bold ">Ingredients:</p> {meal.ingredients.join(", ")}
                         </p>
                       </li>
                     ))}
@@ -76,4 +76,4 @@ return (
   );
 }
 
-export default MealPlanTwo
+export default MealPlanFour

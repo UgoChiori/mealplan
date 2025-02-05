@@ -65,7 +65,7 @@ const MealPlan: React.FC = () => {
                             {foodEmojis[meal.name] || "🍽️"} {meal.name}
                           </strong>
                           <p className="text-sm text-gray-500 capitalize italic break-words">
-                            Ingredients: {meal.ingredients.join(", ")}
+                           <p className="font-bold ">Ingredients:</p> {meal.ingredients.join(", ")}
                           </p>
                         </li>
                       ))}
@@ -81,7 +81,6 @@ const MealPlan: React.FC = () => {
 
 export default MealPlan;
 
-// import React from 'react';
 // import { weeklyMealPlan } from '../utils/mealPlan';
 
 // const foodEmojis: { [key: string]: string } = {

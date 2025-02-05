@@ -1,30 +1,29 @@
-import MealPlan from "./components/MealPlan";
-import MealPlanThree from "./components/MealPlanThree";
-import MealPlanTwo from "./components/MealPlanTwo";
-import MealPlanFour from "./components/MealPlanFour" ;
-import Footer from "./Footer";
+import MealPlan from "./routes/MealPlan";
+import MealPlanThree from "./routes/MealPlanThree";
+import MealPlanTwo from "./routes/MealPlanTwo";
+import MealPlanFour from "./routes/MealPlanFour";
+import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/react";
-import {Routes, Route} from "react-router-dom";
-import NavBar from "./navigation/NavBar";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Recipes from "./routes/Recipes";
 
 function App() {
- 
-
   return (
-    <div className="border border-black p-1 bg-teal-200">
-      <NavBar/>
-    <Routes>
-<Route path="/" element={<MealPlan/>} />
-<Route path="/mealplantwo" element={<MealPlanTwo/>} />
-<Route path="/mealplanthree" element={<MealPlanThree/>} />
-<Route path="/mealplanfour" element={<MealPlanFour/>} />
- 
+    <div className=" p-1 bg-teal-200">
+      <NavBar />
+      <Routes>
+        <Route path="/recipes" element={<Recipes />} />
+        <Route path="/" element={<MealPlan />} />
+        <Route path="/mealplantwo" element={<MealPlanTwo />} />
+        <Route path="/mealplanthree" element={<MealPlanThree />} />
+        <Route path="/mealplanfour" element={<MealPlanFour />} />
+      </Routes>
 
-   </Routes>
-   <Footer />
-   <Analytics/>
+      <Analytics />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -62,7 +62,7 @@ const MealPlanTwo:React.FC = () => {
                             {foodEmojis[meal.name] || "🍽️"} {meal.name}
                           </strong>
                           <p className="text-sm text-gray-500 capitalize italic break-words">
-                            Ingredients: {meal.ingredients.join(", ")}
+                          <p className="font-bold ">Ingredients:</p> {meal.ingredients.join(", ")}
                           </p>
                         </li>
                       ))}
